@@ -1,0 +1,17 @@
+.CartItem {
+    display:flex;
+}
+
+.CartItem-info {
+    flex-grow: 1;
+}
+
+.CartItem-image {
+    height: 180px;
+    width: 180px;
+}
+
+.CartItem-image > img {
+    object-fit: contain;
+    width: 100%;
+}
