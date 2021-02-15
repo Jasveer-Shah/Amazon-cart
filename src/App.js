@@ -8,7 +8,7 @@ import data from './Data';
 
 function App() {
 const [ cartItems, setCartItems ] = useState(data);     
-console.log(cartItems);
+console.log(cartItems, 'cartItems');
 // useState returns an array of value and the function to change the value.
 // and we simply catch that by destructring it
   return (
@@ -16,8 +16,8 @@ console.log(cartItems);
          <Header title= "Amazon Cart"/>
         <div className="App-main">
           
-           <CartItems items= {cartItems}/> 
-           <CartTotal/>
+           <CartItems items= {cartItems} setCartItems={setCartItems}/> 
+           <CartTotal  items= {cartItems}/>
         </div>
            
       </div>
