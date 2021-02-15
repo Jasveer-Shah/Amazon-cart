@@ -20,7 +20,7 @@ function CartItem({ item, changeQuantityItem, index, deleteItem }) {
                  <div className="item-quantity">
                     <select onChange = {(e) => changeQuantityItem(e, index)}
                      value={item.quantity}>
-                         
+
                         <option value="1">Qty: 1</option>
                         <option value="2">Qty: 2</option>
                         <option value="3">Qty: 3</option>
