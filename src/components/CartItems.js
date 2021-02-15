@@ -34,11 +34,8 @@ function CartItems({ items, setCartItems }) {
        //.filter() tha gives back an array without remove item.It is an Es6 function based on the index.
        // update the items using the setCartItems function
     };
+ console.log(items);
 
-
-
-
-    console.log(items);
     return (
         <div className="CartItems">
            <h1>Shopping Cart</h1>
@@ -53,7 +50,7 @@ function CartItems({ items, setCartItems }) {
                 deleteItem = {deleteItem}
                 />
                  )} 
-                ) 
+                 
            </div> 
         
         </div>
